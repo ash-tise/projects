@@ -31,6 +31,6 @@ with YoutubeDL() as ydl:
         except:
             print(f'FAILED TO DOWNLOAD {video_title}')
         try:
-            os.rename(search_title, f'{i+1} {video_title}')
+            os.rename(search_title, f'{i+1} {video_title}.mp4')
         except:
             print(f'FAILED TO RENAME FILE {search_title}')
